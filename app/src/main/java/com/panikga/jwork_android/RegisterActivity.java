@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
         EditText etEmail = findViewById(R.id.inputEmail);
         EditText etPassword = findViewById(R.id.inputPassword);
         Button btnRegister = findViewById(R.id.tombolDaftar);
+        TextView backToLogin = findViewById(R.id.btnLogin);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,13 @@ public class RegisterActivity extends AppCompatActivity {
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
 
+            }
+        });
+
+        backToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 

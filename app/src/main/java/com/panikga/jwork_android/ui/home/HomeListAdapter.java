@@ -1,6 +1,5 @@
-package com.panikga.jwork_android;
+package com.panikga.jwork_android.ui.home;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -9,16 +8,20 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
+import com.panikga.jwork_android.R;
+import com.panikga.jwork_android.model.Job;
+import com.panikga.jwork_android.model.Recruiter;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MainListAdapter extends BaseExpandableListAdapter {
+public class HomeListAdapter extends BaseExpandableListAdapter {
 
     private Context _context;
     private ArrayList<Recruiter> _listDataHeader;
     private HashMap<Recruiter, ArrayList<Job>> _listDataChild;
 
-    public MainListAdapter(Context context, ArrayList<Recruiter> listDataHeader,
+    public HomeListAdapter(Context context, ArrayList<Recruiter> listDataHeader,
                            HashMap<Recruiter, ArrayList<Job>> listChildData) {
         this._context = context;
         this._listDataHeader = listDataHeader;

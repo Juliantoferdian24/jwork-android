@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"
+        app:cnb_backgroundColor="#B3DBFF"
+        app:cnb_iconColor="#3286CE"
+        app:cnb_textColor="#3286CE" />
+
+    <item
+        android:id="@+id/navigation_job"
+        android:icon="@drawable/ic_headhunting"
+        android:title="@string/title_job"
+        app:cnb_backgroundColor="#B7E7DC"
+        app:cnb_iconColor="#189A7C"
+        app:cnb_textColor="#189A7C" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/title_profile"
+        app:cnb_backgroundColor="#F4D8B7"
+        app:cnb_iconColor="#BD7D32"
+        app:cnb_textColor="#BD7D32" />
+</menu>

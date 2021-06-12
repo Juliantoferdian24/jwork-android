@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".ui.authentication.RegisterActivity">
 
     <View
         android:id="@+id/topView"
         android:layout_width="0dp"
         android:layout_height="250dp"
-        android:background="@color/blueaccent"
+        android:background="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/topView"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_person" />
+        app:srcCompat="@drawable/ic_logo" />
 
 
     <EditText
@@ -85,8 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
 
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/tombolDaftar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -110,7 +109,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:text="Already have an Account? Sign in"
-        android:textColor="@color/blueaccent"
+        android:textColor="@color/teal_700"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,11 +1,11 @@
-package com.panikga.jwork_android;
+package com.panikga.jwork_android.model;
 
 public class Location {
     private String province;
     private String description;
     private String city;
 
-    public Location(String province, String city, String description){
+    public Location(String province, String city, String description) {
         this.province = province;
         this.description = description;
         this.city = city;

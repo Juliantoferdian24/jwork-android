@@ -1,4 +1,4 @@
-package com.panikga.jwork_android;
+package com.panikga.jwork_android.ui.authentication;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.panikga.jwork_android.R;
+import com.panikga.jwork_android.request.RegisterRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,7 +24,6 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        getSupportActionBar().hide();
 
         EditText etName = findViewById(R.id.inputName);
         EditText etEmail = findViewById(R.id.inputEmail);

@@ -1,4 +1,4 @@
-package com.panikga.jwork_android;
+package com.panikga.jwork_android.model;
 
 public class Job {
     private int id;
